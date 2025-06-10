@@ -2,10 +2,10 @@
 const Blog = () => {
   const blogPosts = [
     {
-      title: "Building a Redis Clone in Go",
-      description: "Deep dive into implementing the RESP protocol and handling concurrent connections in Go for building a Redis-compatible database.",
+      title: "Go Memory Model Deep Dive",
+      description: "The Go memory model defines when writes in one goroutine become visible to reads in another. It guarantees that data-race-free (DRF) programs behave sequentially consistently (SC), meaning they act as if goroutines run on a single processor.",
       date: "Dec 2024",
-      readTime: "8 min read"
+      readTime: "15 min read"
     },
     {
       title: "Understanding LSM-Trees",
