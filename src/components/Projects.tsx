@@ -42,51 +42,49 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-800/30">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-light text-white mb-16 text-center">
-          Projects
-        </h2>
-        
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
-            <div
-              key={index}
-              className="bg-gray-800/50 border border-gray-700 p-6 hover:border-gray-600 transition-all duration-200 hover:bg-gray-800/70 group"
-            >
-              <div className="flex justify-between items-start mb-4">
-                <h3 className="text-xl font-medium text-white group-hover:text-gray-200 transition-colors duration-200">
-                  {project.title}
-                </h3>
-                {project.github !== "#" && (
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-white transition-colors duration-200"
-                  >
-                    <Github size={20} />
-                  </a>
-                )}
-              </div>
-              
-              <p className="text-gray-300 text-sm leading-relaxed mb-4">
-                {project.description}
-              </p>
-              
-              <div className="flex flex-wrap gap-2">
-                {project.tech.map((tech) => (
-                  <span
-                    key={tech}
-                    className="px-2 py-1 bg-gray-700 text-gray-300 text-xs border border-gray-600"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
+    <section className="py-20 border-t border-gray-200">
+      <h2 className="text-3xl sm:text-4xl font-jetbrains text-black mb-16">
+        Projects
+      </h2>
+      
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {projects.map((project, index) => (
+          <div
+            key={index}
+            className="border border-gray-200 p-6 hover:border-gray-400 transition-all duration-200 hover:bg-gray-50 group"
+          >
+            <div className="flex justify-between items-start mb-4">
+              <h3 className="text-xl font-jetbrains text-black group-hover:text-gray-700 transition-colors duration-200">
+                {project.title}
+              </h3>
+              {project.github !== "#" && (
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-black transition-colors duration-200"
+                >
+                  <Github size={20} />
+                </a>
+              )}
             </div>
-          ))}
-        </div>
+            
+            <p className="text-gray-700 text-sm leading-relaxed mb-4 font-jetbrains">
+              {project.description}
+            </p>
+            
+            <div className="flex flex-wrap gap-2">
+              {project.tech.map((tech) => (
+                <span
+                  key={tech}
+                  className="px-2 py-1 bg-gray-200 text-gray-800 text-xs border border-gray-300 font-jetbrains"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );
