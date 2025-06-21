@@ -8,9 +8,18 @@ const Blog = () => {
       title: "Go Memory Model Deep Dive",
       description:
         "The Go memory model defines when writes in one goroutine become visible to reads in another. It guarantees that data-race-free (DRF) programs behave sequentially consistently (SC), meaning they act as if goroutines run on a single processor.",
-      date: "Dec 2024",
+      date: "June 2025",
       readTime: "15 min read",
       link: "https://coconut-swordtail-fc7.notion.site/Go-Memory-Model-Deep-Dive-20fd669fe203802db80fee435e4c0a15",
+    },
+    {
+      title:
+        "The Architecture of Resource Control: A Theoretical Deep Dive into Cgroups for Container Runtimes",
+      description:
+        "An exploration of cgroups and their role in container resource management.",
+      date: "June 2025",
+      readTime: "20 min read",
+      link: "https://coconut-swordtail-fc7.notion.site/The-Architecture-of-Resource-Control-A-Theoretical-Deep-Dive-into-Cgroups-for-Container-Runtimes-in-219d669fe203802ea9a5c40fec4a5d39",
     },
     {
       title: "Understanding LSM-Trees",
