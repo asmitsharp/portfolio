@@ -21,30 +21,6 @@ const Blog = () => {
       readTime: "20 min read",
       link: "https://coconut-swordtail-fc7.notion.site/The-Architecture-of-Resource-Control-A-Theoretical-Deep-Dive-into-Cgroups-for-Container-Runtimes-in-219d669fe203802ea9a5c40fec4a5d39",
     },
-    {
-      title: "Understanding LSM-Trees",
-      description:
-        "Exploring the architecture behind modern NoSQL databases and how LSM-trees provide efficient write performance.",
-      date: "Nov 2024",
-      readTime: "12 min read",
-      link: "#",
-    },
-    {
-      title: "Network Programming in Go",
-      description:
-        "Building high-performance network applications using Go's goroutines and channels for concurrent packet processing.",
-      date: "Oct 2024",
-      readTime: "10 min read",
-      link: "#",
-    },
-    {
-      title: "Serverless Architecture with AWS Lambda",
-      description:
-        "Best practices for building scalable serverless applications and managing state in distributed systems.",
-      date: "Sep 2024",
-      readTime: "6 min read",
-      link: "#",
-    },
   ]
 
   const displayedPosts = showAllPosts ? blogPosts : blogPosts.slice(0, 5)
